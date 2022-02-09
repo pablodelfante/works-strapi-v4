@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technologies",
+  "info": {
+    "singularName": "technologie",
+    "pluralName": "technologies",
+    "displayName": "technologies",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ref": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::work.work",
+      "inversedBy": "technologies"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "work",
     "pluralName": "works",
-    "displayName": "work",
+    "displayName": "works",
     "description": ""
   },
   "options": {
@@ -16,6 +16,47 @@
       "type": "richtext",
       "default": "contant is empty",
       "required": true
+    },
+    "technologies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::technologie.technologie",
+      "mappedBy": "ref"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "empty"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "url_image": {
+      "type": "string",
+      "required": false
+    },
+    "url_github": {
+      "type": "string"
+    },
+    "url_video": {
+      "type": "string"
+    },
+    "url_deploy": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
