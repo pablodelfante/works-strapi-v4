@@ -14,10 +14,9 @@
   "attributes": {
     "content": {
       "type": "richtext",
-      "default": "contant is empty",
-      "required": true
+      "required": false
     },
-    "technologies": {
+    "technologiesToUpdate": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::technologie.technologie",
@@ -50,13 +49,17 @@
       "default": false
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "technologies": {
+      "type": "json"
     }
   }
 }

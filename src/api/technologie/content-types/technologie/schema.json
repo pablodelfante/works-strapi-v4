@@ -12,14 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "ref": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::work.work",
-      "inversedBy": "technologies"
-    },
-    "title": {
-      "type": "string"
+      "inversedBy": "technologiesToUpdate"
     }
   }
 }
