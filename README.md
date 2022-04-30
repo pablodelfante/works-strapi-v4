@@ -1,4 +1,10 @@
 # Strapi application
 
 ### To start services
-    docker-compose up
+```bash
+docker-compose up
+```
+After that you can access the application at:
+```bash 
+http://localhost:1338
+``` 
